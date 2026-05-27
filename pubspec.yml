@@ -1,0 +1,75 @@
+name: budgetone
+description: BudgetONE - Gestisci, controlla, cresci. App per la gestione del budget personale.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  flutter_bloc: ^9.1.1
+  hydrated_bloc: ^10.1.1
+  equatable: ^2.0.8
+  provider: ^6.1.5
+
+  # Dependency injection
+  pine: ^1.0.4
+
+  # Routing
+  auto_route: ^11.1.0
+
+  # Networking
+  dio: ^5.9.2
+  retrofit: ^4.9.2
+  pretty_dio_logger: ^1.4.0
+
+  # Serialization
+  json_annotation: ^4.11.0
+
+  # Storage
+  flutter_secure_storage: ^10.0.0
+  shared_preferences: ^2.5.4
+  path_provider: ^2.1.4
+
+  # UI utilities
+  cached_network_image: ^3.4.1
+  google_fonts: ^8.0.2
+  fl_chart: ^0.69.0
+  flutter_svg: ^2.0.10
+
+  # Internationalization
+  intl: ^0.20.2
+
+  # Logging
+  logger: ^2.6.2
+
+  # Utilities
+  uuid: ^4.5.1
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+  # Code generation
+  build_runner: ^2.11.1
+  json_serializable: ^6.13.0
+  retrofit_generator: ^10.2.3
+  auto_route_generator: ^10.5.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+
+  fonts: []
