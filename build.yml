@@ -1,0 +1,11 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        options:
+          explicit_to_json: true
+          field_rename: snake
+          include_if_null: false
+      auto_route_generator:auto_route_generator:
+        generate_for:
+          - lib/routers/app_router.dart
